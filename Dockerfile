@@ -10,9 +10,9 @@ COPY . /app
 # Upgrade pip and install any needed packages specified in requirements.txt
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
-# Expose the port that Streamlit uses (default is 8501)
-EXPOSE 8501
+# Expose the port that Streamlit will use (now 3000 to match Coolify)
+EXPOSE 3000
 
-# Run the Streamlit app
-CMD ["streamlit", "run", "src/streamlit_app.py", "--server.enableCORS", "false", "--server.address", "0.0.0.0"]
+# Run the Streamlit app on port 3000
+CMD ["streamlit", "run", "src/streamlit_app.py", "--server.enableCORS", "false", "--server.address", "0.0.0.0", "--server.port", "3000"]
 
