@@ -108,7 +108,7 @@ tornado==6.4.2
 tqdm==4.67.1
 typing_extensions==4.12.2
 tzdata==2024.2
-ultralytics>=8.0.225,<8.3.66
+ultralytics==8.3.65
 ultralytics-thop==2.0.14
 ultralyticsplus==0.1.0
 urllib3==2.3.0
